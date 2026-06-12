@@ -1,0 +1,22 @@
+INSERT INTO ingredients (name, category, calories_per_100g, protein_per_100g, carbs_per_100g, fat_per_100g, fiber_per_100g) VALUES
+('Paneer (Raw)', 'Dairy', 265, 18, 1.2, 20, 0),
+('Basmati Rice (Raw)', 'Grains', 350, 8, 78, 0.5, 1),
+('Toor Dal (Raw)', 'Lentils', 343, 22, 63, 1.5, 15),
+('Moong Dal (Yellow, Raw)', 'Lentils', 348, 24, 60, 1, 16),
+('Chana Dal (Raw)', 'Lentils', 364, 22, 61, 5, 11),
+('Roti / Chapati (Whole Wheat)', 'Breads', 297, 9, 46, 9, 9),
+('Potato (Raw)', 'Vegetables', 77, 2, 17, 0.1, 2.2),
+('Onion (Raw)', 'Vegetables', 40, 1.1, 9, 0.1, 1.7),
+('Tomato (Raw)', 'Vegetables', 18, 0.9, 3.9, 0.2, 1.2),
+('Spinach (Palak, Raw)', 'Vegetables', 23, 2.9, 3.6, 0.4, 2.2),
+('Cauliflower (Gobi, Raw)', 'Vegetables', 25, 1.9, 5, 0.3, 2),
+('Okra (Bhindi, Raw)', 'Vegetables', 33, 1.9, 7.5, 0.2, 3.2),
+('Green Peas (Matar, Raw)', 'Vegetables', 81, 5.4, 14, 0.4, 5.1),
+('Chicken Breast (Raw)', 'Meat', 165, 31, 0, 3.6, 0),
+('Mustard Oil', 'Fats/Oils', 884, 0, 0, 100, 0),
+('Ghee (Clarified Butter)', 'Fats/Oils', 900, 0, 0, 100, 0),
+('Yogurt (Curd, Whole Milk)', 'Dairy', 61, 3.5, 4.7, 3.3, 0),
+('Coriander Leaves (Fresh)', 'Herbs', 23, 2.1, 3.7, 0.5, 2.8),
+('Garlic (Raw)', 'Spices/Aromatics', 149, 6.4, 33, 0.5, 2.1),
+('Ginger (Raw)', 'Spices/Aromatics', 80, 1.8, 18, 0.8, 2)
+ON CONFLICT (name) DO NOTHING;
